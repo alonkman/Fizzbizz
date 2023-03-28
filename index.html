@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="Chek" placeholder="For statment" />
+    <button onclick="F()">Click here</button>
+    <input id="Chek2" placeholder="While statment" />
+    <button onclick="W()">Click here2</button>
+    <script>
+      function W() {
+        let index = 0;
+        while (index <= 100) {
+          if (index % 3 == 0 && index % 5 == 0) {
+            console.log("Fizzbizz");
+          } else if (index % 3 == 0) {
+            console.log("Fizz");
+          } else if (index % 5 == 0) {
+            console.log("bizz");
+          } else console.log(index);
+          index++;
+        }
+      }
+
+      function F() {
+        for (let index = 1; index <= 100; index++) {
+          if (index % 3 === 0 && index % 5 === 0) {
+            console.log("FizzBizz");
+          } else if (index % 5 === 0) {
+            console.log("Bizz");
+          } else if (index % 3 === 0) {
+            console.log("fizz");
+          } else {
+            console.log(index);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
